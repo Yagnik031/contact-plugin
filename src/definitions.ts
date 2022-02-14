@@ -1,7 +1,4 @@
-
 export interface ContactsPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
-
   getPermissions(): Promise<PermissionStatus>;
   getContacts(): Promise<{ contacts: Contact[] }>;
   saveContact(contact: NewContact): Promise<void>;

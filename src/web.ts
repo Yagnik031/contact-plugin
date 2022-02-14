@@ -13,8 +13,4 @@ export class ContactsWeb extends WebPlugin implements ContactsPlugin {
     throw new Error('Method not implemented.');
   }
 
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
-  }
 }
