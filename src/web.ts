@@ -3,27 +3,10 @@ import { ContactsPlugin } from './definitions';
 
 
 export class ContactsWeb extends WebPlugin implements ContactsPlugin {
-
-  constructor() {
-    super({
-      name: 'ContactsPlugin',
-      platforms: ['web']
-    });
+  echo(_options: { value: string; }): Promise<{ value: string; }> {
+    throw new Error('Method not implemented.');
   }
-
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
-  }
-
-  async getContacts(filter: string): Promise<{ results: any[] }> {
-    console.log('filter: ', filter);
-    return {
-      results: [{
-        firstName: 'Dummy',
-        lastName: 'Entry',
-        telephone: '123456'
-      }]
-    };
+  getContacts(_filter: string): Promise<{ results: any[]; }> {
+    throw new Error('Method not implemented.');
   }
 }
