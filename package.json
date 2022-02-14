@@ -1,6 +1,6 @@
 {
   "name": "yagnik-contacts",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "this plugin will fetch your contacts from your device.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
